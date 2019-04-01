@@ -58,6 +58,25 @@ div:hover {
 	transform-origin: bottom left;
 }
 
+/* cat css */
+img {
+	width: 300px;
+	display: block;
+	margin: auto;
+	margin-bottom: 70px;
+	margin-top: 70px;
+	transition: transform 1s;
+}
+
+.second {
+	transform-origin: top left;
+	margin-bottom: 0;
+}
+
+.first:hover, .second:hover {
+	transform: rotate(30deg);
+}
+
 </style>
 </head>
 
@@ -70,7 +89,10 @@ div:hover {
 	<div class="top-right">top right</div>
 	<div class="bottom-right">bottom right</div>
 	<div class="bottom-left">bottom left</div>
-	<div class="top-left">top left</div>
+    <div class="top-left">top left</div>
+    
+    <img src="cat.jpg" alt="cat" class="first">
+	<img src="cat.jpg" alt="cat" class="second">
 
 </body>
 </html>
